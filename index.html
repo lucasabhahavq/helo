@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título da aba -->
+  <title>Pra VOCÊ</title>
+
+  <!-- Ligação com o CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================= -->
+  <!-- BOTÃO DE MÚSICA -->
+  <!-- ========================================= -->
+
+  <!--
+    Você pode trocar o ícone depois.
+    Esse botão serve para tocar/parar a música.
+  -->
+
+  <div class="music-container">
+
+  <button class="music-button" onclick="openMusicModal()">
+
+    <!-- FOTO DO HOMEM ARANHA -->
+    <img
+      src="fotos/images.jpeg"
+      alt="Homem Aranha"
+      class="spiderman-icon"
+    >
+
+  </button>
+
+  <span class="music-text">
+    para tocar Música<br>toque no homem aranha
+  </span>
+
+</div>
+
+
+  <!-- ========================================= -->
+  <!-- ÁUDIO -->
+  <!-- ========================================= -->
+
+  <!--
+    TROQUE O ARQUIVO 'musica.mp3'
+    pela música que você quiser.
+
+    Exemplo:
+    romantica.mp3
+    nossa-musica.mp3
+  -->
+
+  <audio id="music" loop>
+    <source src="musica.mp3" type="audio/mp3">
+  </audio>
+
+
+  <!-- ========================================= -->
+  <!-- TELA INICIAL -->
+  <!-- ========================================= -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="mini-title">
+        Site Feito por mim para vc<span onclick="openLetter(4)">🌹</span>
+      </p>
+      
+
+      <h1>
+        Nossa história começou quando menos esperávamos
+        <span>
+          Com um simples follow no insta
+        </span>
+      </h1>
+
+      <p class="hero-text">
+        Esse site é uma pequena forma de mostrar
+        o quanto você se tornou importante pra mim.
+      </p>
+
+      <a href="#timeline" class="main-button">
+        Ver mais
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================= -->
+  <!-- LINHA DO TEMPO -->
+  <!-- ========================================= -->
+
+  <section class="timeline-section" id="timeline">
+
+    <h2 class="section-title">
+      Como posso começar?
+    </h2>
+
+
+    <!-- CARD 1 -->
+    <div class="timeline-card">
+
+      <p class="chapter">
+        Você
+      </p>
+
+      <h3>
+        É VOCÊ
+      </h3>
+
+      <p>
+        É lindo como cada risada,cada momento com vc se torna especial. Provavelmente eu já te disse isso mas preciso ressaltar,você é a pessoa mais engraçada(tirando os six seven,pode n),atenciosa,inteligente e sonhadora que eu conheço,vc é minha melhor amiga,a pessoa em quem eu posso desabafar rir e chorar.
+      </p>
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="timeline-card">
+
+      <p class="chapter">
+        Eu
+      </p>
+
+      <h3>
+        TE AMO
+      </h3>
+
+      <p>
+        Eu sou aquele mlk caladão que ama ignorar os outros e dar desculpas pra n sair,mas com vc é o oposto,eu quero estar com vc a todo momento,vc me faz querer sair e me faz acreditar que a vida pode ser melhor.
+      </p>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="timeline-card">
+
+      <p class="chapter">
+        Nós
+      </p>
+
+      <h3>
+        PRA SEMPRE
+      </h3>
+
+      <p>
+        Se tem uma coisa que eu quero é dar certo com vc,eu tô disposto a te dar tudo que à de bom no mundo,só pra ver vc sorrindo mais um pouco,por 1 seg que seja
+      </p>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="timeline-card">
+
+      <p class="chapter">
+        Distância
+      </p>
+
+      <h3>
+        PAIA
+      </h3>
+
+      <p>
+      É algo que está fora do nosso controle que magoa a gente. Pq oq nos impede n são quilometros,são pessoas,e espero que a gente vença isso e consiga superar essas dificuldades
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================= -->
+  <!-- FOTO EM FORMATO DE CORAÇÃO -->
+  <!-- ========================================= -->
+
+  <section class="heart-section">
+
+    <h2 class="section-title">
+      Minha Foto Favorita
+    </h2>
+
+    <!--
+      TROQUE 'foto-coracao.jpg'
+      pela foto de vocês.
+    -->
+
+    <div class="heart-image">
+      <img src="fotos/1000233247.jpg" alt="foto casal" onclick="openLetter(3)">
+    </div>
+
+  </section>
+
+
+  <!-- ========================================= -->
+  <!-- GALERIA -->
+  <!-- ========================================= -->
+
+  <section class="gallery-section">
+
+    <h2 class="section-title">
+      Memórias
+    </h2>
+
+    <div class="gallery-grid">
+
+      <!-- FOTO 1 -->
+      <div class="gallery-card">
+
+        <!--
+          TROQUE A FOTO AQUI
+        -->
+        <img src="fotos/1000229123.jpg" alt="foto">
+
+        <p>
+          Primeira vez que saimos sem ser no morro
+        </p>
+
+      </div>
+
+
+      <!-- FOTO 2 -->
+      <div class="gallery-card">
+
+        <img src="fotos/1000234874.jpg" alt="foto">
+
+        <p>
+          Eu ansioso pro pedido 
+        </p>
+
+      </div>
+
+
+      <!-- FOTO 3 -->
+      <div class="gallery-card">
+
+        <img src="fotos/1000231325.jpg" alt="foto">
+
+        <p>
+          Dps do Filme do michael jackson 
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================= -->
+  <!-- REFERÊNCIAS SECRETAS -->
+  <!-- ========================================= -->
+
+  <section class="references-section">
+
+    <h2 class="section-title">
+      Pequenas Referências
+    </h2>
+
+    <div class="references-grid">
+
+      <div class="reference-card">
+        <p onclick="openLetter(1)">🦇</p>
+        <p>
+          Você provavelmente seria a única pessoa
+          que me faria escolher conversar ao invés
+          de patrulhar Gotham.
+        </p>
+      </div>
+
+
+      <div class="reference-card" onclick="openLetter(2)">
+        🕷️
+        <p>
+          Acho que entendi o Peter Parker...
+          gostar de alguém realmente deixa tudo
+          mais assustador.
+        </p>
+      </div>
+
+
+      <div class="reference-card">
+        ❤️
+        <p>
+          O amor de vdd é escolher a mesma pessoa a vida toda,todo dia.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================= -->
+  <!-- FINAL -->
+  <!-- ========================================= -->
+
+  <section class="final-section">
+
+    <div class="final-content">
+
+      <p class="mini-title">
+        Jornada
+      </p>
+
+      <h2>
+        Acho que essa foi a melhor
+        história da minha vida até agora.
+      </h2>
+
+      <p class="final-text">
+        Obrigado por existir na minha vida.
+        <br>
+        E obrigado por fazer meus dias melhores
+        sem nem tentar.
+      </p>
+
+      <button class="main-button" onclick="showLoveMessage()">
+        Uma última coisa...
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- ========================================= -->
+<!-- CARTAS SECRETAS -->
+<!-- ========================================= -->
+
+<div id="letterModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close-modal" onclick="closeLetter()">
+      ✖
+    </span>
+
+    <h2 id="letterTitle"></h2>
+
+    <p id="letterText"></p>
+
+  </div>
+
+</div>
+  <!-- ========================================= -->
+<!-- JANELA DE ESCOLHA DE MÚSICA -->
+<!-- ========================================= -->
+
+<div id="musicModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close-modal" onclick="closeMusicModal()">
+      ✖
+    </span>
+
+    <h2>Escolha uma música</h2>
+
+    <button class="song-button" onclick="chooseSong('musica1.mp3')">
+      Young and Beautiful
+    </button>
+
+    <button class="song-button" onclick="chooseSong('musica2.mp3')">
+      Partilhar
+    </button>
+
+    <button class="song-button" onclick="chooseSong('musica3.mp3')">
+      Pupila
+    </button>
+
+    <button class="song-button" onclick="pauseMusic()">
+      Pausar música
+    </button>
+
+  </div>
+
+</div>
+  <!-- Ligação com JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
